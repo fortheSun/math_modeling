@@ -1,6 +1,6 @@
-x = int(input())
+year = int(input())
 
-if x % 4 == 0:
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
   print("високосный")
 else:
   print("невисокосный")
