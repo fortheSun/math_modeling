@@ -1,11 +1,8 @@
-x = y = 1
-
+f1 = f2 = 1
 n = int(input())
 
-print(x, y, end=' ')
-
-for i in range(1, n):
-  x, y = y, x + y
-  print(y, end=' ')
-
-print()
+for i in range(n - 2):
+  f3 = f1 + f2
+  print(f3)
+  f1 = f2
+  f2 = f3
