@@ -2,10 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
-import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation
-
 fig, ax = plt.subplots()
 ball, = plt.plot([], [], 'o', color='r', label='Ball')
 
