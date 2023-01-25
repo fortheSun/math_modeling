@@ -4,22 +4,20 @@ import matplotlib.pyplot as plt
 
 
 t = np.arange(0, 100, 0.1)
-v = 50
-b = 10
 g = 9.8
 
-def tochka_func(v, t):
-    dv_dt = (b - k * t) / m 
-    return dv_dt
+def kuvshinka_func(S, t):
+    dS_dt = k * R * 
+    return dS_dt
 
 
 
 plt.grid()
 
-v_0 = 50
-k = 0.5
+S_0 = 1600
+k = 1360.8
 
-v_t = odeint(tochka_func, v_0, t)
+S_t = odeint(kuvshinka_func, S_0, t)
 
-plt.plot(t, v_t[:,0])
+plt.plot(t, S_t[:,0])
 plt.savefig("tochka.png")
